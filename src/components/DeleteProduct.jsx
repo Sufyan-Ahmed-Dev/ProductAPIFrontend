@@ -6,9 +6,19 @@ const DeleteProduct = () => {
 
   const handleDelete = async (e) => {
     e.preventDefault();
+
     try {
-      await axios.delete(`https://real-pink-scallop-kit.cyclic.app/api/products/${productId}`);
-      alert('Product deleted successfully!');
+      const Alert = window.prompt("Passwared==>")
+      console.log(typeof(Alert))
+      if(Alert === "123456789"){
+        await axios.delete(`https://real-pink-scallop-kit.cyclic.app/api/products/${productId}`);
+        alert('Product deleted successfully!');
+      }
+      // console.log(Alert)
+      // if()
+     else{
+      alert('Incorect Passward');
+     }
     } catch (err) {
       console.error(err);
       alert('Failed to delete product.');

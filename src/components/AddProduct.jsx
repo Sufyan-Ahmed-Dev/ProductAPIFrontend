@@ -14,6 +14,7 @@ const AddProduct = () => {
       console.log(newProduct)
       await axios.post('https://real-pink-scallop-kit.cyclic.app/', newProduct);
       alert('Product added successfully!');
+      document.getElementById("myForm").reset();
     } catch (err) {
       console.error(err);
       alert('Failed to add product.');
@@ -24,7 +25,7 @@ const AddProduct = () => {
     <div className="d-flex justify-content-center align-items-center min-vh-100">
       <div className="container shadow p-5 bg-white rounded">
         <h2 className="mb-4">Add Product</h2>
-        <form onSubmit={handleSubmit}>
+        <form id='myForm' onSubmit={handleSubmit}>
           <div className="mb-3">
             <label className="form-label">Name:</label>
             <input
