@@ -6,7 +6,7 @@ const CheckAllProducts = () => {
 
   useEffect(() => {
     axios
-      .get('http://127.0.0.1:3000/getall')
+      .get('https://real-pink-scallop-kit.cyclic.app/')
       .then((response) => {
         setProducts(response.data);
       })
@@ -20,13 +20,20 @@ const CheckAllProducts = () => {
     <div className="d-flex justify-content-center align-items-center min-vh-100">
       <div className="container">
         <h2>Check All Products</h2>
-        <ul className="list-group">
+        <div className="row">
           {products.map((product) => (
-            <li key={product._id} className="list-group-item">
-              {product.name} - {product.description} - ${product.price} - ${product._id}
-            </li>
+            <div key={product._id} className="col-sm-6 col-md-5 col-lg-4 mb-3">
+              <div className="card">
+                <div className="card-body">
+                  <h5 className="card-title">Name: {product.name}</h5>
+                  <p className="card-text">Description: {product.description}</p>
+                  <p className="card-text">Price: ${product.price}</p>
+                  <p className="card-text">ID: ${product._id}</p>
+                </div>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );

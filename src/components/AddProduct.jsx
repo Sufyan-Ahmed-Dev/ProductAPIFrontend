@@ -12,7 +12,7 @@ const AddProduct = () => {
     try {
       const newProduct = { name, description, price }
       console.log(newProduct)
-      await axios.post('http://127.0.0.1:3000/', newProduct);
+      await axios.post('https://real-pink-scallop-kit.cyclic.app/', newProduct);
       alert('Product added successfully!');
     } catch (err) {
       console.error(err);

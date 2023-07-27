@@ -7,7 +7,7 @@ const DeleteProduct = () => {
   const handleDelete = async (e) => {
     e.preventDefault();
     try {
-      await axios.delete(`http://127.0.0.1:3000/api/products/${productId}`);
+      await axios.delete(`https://real-pink-scallop-kit.cyclic.app/api/products/${productId}`);
       alert('Product deleted successfully!');
     } catch (err) {
       console.error(err);
