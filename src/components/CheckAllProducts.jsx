@@ -6,7 +6,7 @@ const CheckAllProducts = () => {
 
   useEffect(() => {
     axios
-      .get('https://real-pink-scallop-kit.cyclic.app/')
+      .get('https://real-pink-scallop-kit.cyclic.app/check')
       .then((response) => {
         setProducts(response.data);
       })
