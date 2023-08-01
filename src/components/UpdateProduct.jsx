@@ -11,7 +11,7 @@ const UpdateProduct = () => {
     e.preventDefault();
     try {
       const updatedProduct = {productId, name, description, price };
-      await axios.put(`https://real-pink-scallop-kit.cyclic.app/api/products/${productId}`, updatedProduct);
+      await axios.put(`https://blue-green-cuttlefish-gear.cyclic.cloud/api/products/${productId}`, updatedProduct);
       alert('Product updated successfully!');
     } catch (err) {
       console.error(err);

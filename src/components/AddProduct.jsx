@@ -12,7 +12,7 @@ const AddProduct = () => {
     try {
       const newProduct = { name, description, price }
       console.log(newProduct)
-      await axios.post('https://real-pink-scallop-kit.cyclic.app/', newProduct);
+      await axios.post('https://blue-green-cuttlefish-gear.cyclic.cloud/', newProduct);
       alert('Product added successfully!');
       document.getElementById("myForm").reset();
     } catch (err) {
