@@ -6,7 +6,7 @@ const CheckAllProducts = () => {
 
   useEffect(() => {
     axios
-      .get('https://blue-green-cuttlefish-gear.cyclic.cloud/check')
+      .get('https://product-api-backend.vercel.app/check')
       .then((response) => {
         setProducts(response.data);
       })
