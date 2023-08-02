@@ -18,7 +18,7 @@ const CheckAllProducts = () => {
 
   return (
     <div className="d-flex justify-content-center align-items-center min-vh-100">
-      <div className="container">
+      <div className="container mt-5">
         <h2>Check All Products</h2>
         <div className="row">
           {products.map((product) => (
