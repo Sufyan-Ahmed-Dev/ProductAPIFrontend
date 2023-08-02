@@ -6,7 +6,7 @@ const CheckAllProducts = () => {
 
   useEffect(() => {
     axios
-      .get('https://product-api-backend.vercel.app/check')
+      .get('https://easy-blue-barnacle-wrap.cyclic.cloud/check')
       .then((response) => {
         setProducts(response.data);
       })

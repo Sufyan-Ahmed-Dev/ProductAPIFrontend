@@ -11,7 +11,7 @@ const UpdateProduct = () => {
     e.preventDefault();
     try {
       const updatedProduct = {productId, name, description, price };
-      await axios.put(`https://product-api-backend.vercel.app/api/products/${productId}`, updatedProduct);
+      await axios.put(`https://easy-blue-barnacle-wrap.cyclic.cloud/api/products/${productId}`, updatedProduct);
       alert('Product updated successfully!');
     } catch (err) {
       console.error(err);
