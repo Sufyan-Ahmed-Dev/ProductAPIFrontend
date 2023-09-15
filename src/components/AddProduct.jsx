@@ -12,7 +12,7 @@ const AddProduct = () => {
     try {
       const newProduct = { name, description, price }
       console.log(newProduct)
-      await axios.post('https://easy-blue-barnacle-wrap.cyclic.cloud/postProduct', newProduct);
+      await axios.post('https://vercel.com/sufyan-ahmed-dev/product/Cbkwwj3WiQKaQvLnbuSV5qdiBBmp/postProduct', newProduct);
       alert('Product added successfully!');
       document.getElementById("myForm").reset();
     } catch (err) {

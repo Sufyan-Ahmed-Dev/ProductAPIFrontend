@@ -6,7 +6,7 @@ const CheckAllProducts = () => {
 
   useEffect(() => {
     axios
-      .get('https://easy-blue-barnacle-wrap.cyclic.cloud/check')
+      .get('https://vercel.com/sufyan-ahmed-dev/product/Cbkwwj3WiQKaQvLnbuSV5qdiBBmp/check')
       .then((response) => {
         setProducts(response.data);
       })

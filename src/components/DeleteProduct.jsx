@@ -11,7 +11,7 @@ const DeleteProduct = () => {
       const Alert = window.prompt("Passwared==>")
       console.log(typeof(Alert))
       if(Alert === "123456789"){
-        await axios.delete(`https://easy-blue-barnacle-wrap.cyclic.cloud/api/products/${productId}`);
+        await axios.delete(`https://vercel.com/sufyan-ahmed-dev/product/Cbkwwj3WiQKaQvLnbuSV5qdiBBmp/api/products/${productId}`);
         alert('Product deleted successfully!');
       }
       // console.log(Alert)
