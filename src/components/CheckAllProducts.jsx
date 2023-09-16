@@ -6,7 +6,7 @@ const CheckAllProducts = () => {
 
   useEffect(() => {
     axios
-      .get('https://vercel.com/sufyan-ahmed-dev/product/Cbkwwj3WiQKaQvLnbuSV5qdiBBmp/check')
+      .get('https://product-api-backend-phi.vercel.app/check')
       .then((response) => {
         setProducts(response.data);
       })

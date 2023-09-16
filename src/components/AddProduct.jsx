@@ -12,7 +12,7 @@ const AddProduct = () => {
     try {
       const newProduct = { name, description, price }
       console.log(newProduct)
-      await axios.post('https://vercel.com/sufyan-ahmed-dev/product/Cbkwwj3WiQKaQvLnbuSV5qdiBBmp/postProduct', newProduct);
+      await axios.post('https://product-api-backend-phi.vercel.app/postProduct', newProduct);
       alert('Product added successfully!');
       document.getElementById("myForm").reset();
     } catch (err) {
