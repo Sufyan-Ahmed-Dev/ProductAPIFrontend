@@ -13,6 +13,7 @@ const UpdateProduct = () => {
       const updatedProduct = {productId, name, description, price };
       await axios.put(`https://product-api-backend-phi.vercel.app/api/products/${productId}`, updatedProduct);
       alert('Product updated successfully!');
+      document.getElementById("myForm").reset();
     } catch (err) {
       console.error(err);
       alert('Failed to update product.');
@@ -23,7 +24,7 @@ const UpdateProduct = () => {
     <div className="d-flex justify-content-center align-items-center min-vh-100">
       <div className="container shadow p-5 bg-white rounded">
         <h2>Update Product</h2>
-        <form onSubmit={handleSubmit}>
+        <form id='myForm' onSubmit={handleSubmit}>
           <div className="mb-3">
             <label className="form-label">Product ID:</label>
             <input

@@ -13,6 +13,7 @@ const DeleteProduct = () => {
       if(Alert === "123456789"){
         await axios.delete(`https://product-api-backend-phi.vercel.app/api/products/${productId}`);
         alert('Product deleted successfully!');
+        document.getElementById("myForm").reset();
       }
       // console.log(Alert)
       // if()
@@ -29,7 +30,7 @@ const DeleteProduct = () => {
     <div className="d-flex justify-content-center align-items-center min-vh-100">
       <div className="container shadow p-5 bg-white rounded">
         <h2>Delete Product</h2>
-        <form onSubmit={handleDelete}>
+        <form id='myForm' onSubmit={handleDelete}>
           <div className="mb-3">
             <label className="form-label">Product ID:</label>
             <input
